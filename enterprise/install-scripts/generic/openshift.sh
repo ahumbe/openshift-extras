@@ -1040,7 +1040,7 @@ install_cartridges()
   # When dependencies are missing, e.g. JBoss subscriptions,
   # still install as much as possible.
   #install_pkgs="${install_pkgs} --skip-broken"
-
+  parse_cartridges
   yum_install_or_exit "${install_pkgs}"
 }
 
